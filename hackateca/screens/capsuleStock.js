@@ -11,17 +11,13 @@ class CapsuleStock extends React.PureComponent {
     const { item } = this.props;
     return <View>
       <Text>{item.nombre} - {this.state.cantidad}</Text>
-      <Button onPress={() => this.increment()} title="+"/>
-      <Button onPress={() => this.decrement()} title="-"/>
+      <Button onPress={() => this.increment(1)} title="+"/>
+      <Button onPress={() => this.increment(-1)} title="-"/>
     </View>
   }
 
-  increment() {
-    this.setState({ ...this.state, cantidad: this.state.cantidad + 1 })
-  }
-
-  decrement() {
-    this.setState({ ...this.state, cantidad: this.state.cantidad - 1 })
+  increment(number) {
+    this.setState({ ...this.state, cantidad: this.state.cantidad + number })
   }
 }
 
