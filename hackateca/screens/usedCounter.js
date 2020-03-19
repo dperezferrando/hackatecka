@@ -1,6 +1,22 @@
 import * as React from 'react';
-import { Text, Button, View } from 'react-native';
+import { Text, Button, View, StyleSheet } from 'react-native';
 
+
+const styles = StyleSheet.create({
+  counter: {
+    alignItems: "center",
+    marginTop: 10
+  },
+  title: {
+    fontSize: 35
+  },
+  usedNumber: {
+    fontWeight: "bold",
+    fontSize: 156,
+    color: "#2e78b7"
+  }
+
+});
 
 class UsedCounter extends React.PureComponent {
 
@@ -10,8 +26,9 @@ class UsedCounter extends React.PureComponent {
   }
 
   render() {
-    return <View>
-      <Text>Capsulas usadas: { this.state.used }</Text>
+    return <View style={styles.counter}>
+      <Text style={styles.title}>Capsulas usadas</Text>
+      <Text style={styles.usedNumber}>{ this.state.used }</Text>
       <Button onPress={() => this.increment()}title="USAR"/>
     </View>
   }
@@ -19,7 +36,8 @@ class UsedCounter extends React.PureComponent {
   increment() {
     this.setState({ ...this.state, used: this.state.used + 1 })
   }
-
 }
+
+
 
 export default UsedCounter
