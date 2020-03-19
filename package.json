@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dperezferrando/hackatecka/issues"
   },
-  "homepage": "https://github.com/dperezferrando/hackatecka#readme"
+  "homepage": "https://github.com/dperezferrando/hackatecka#readme",
+  "dependencies": {
+    "@rematch/core": "^1.4.0"
+  }
 }

@@ -10,7 +10,7 @@ class CapsuleStockContainer extends React.PureComponent {
   }
 
   test() {
-    this.props.actions.testAction();
+    this.props.actions.test();
   }
 }
 
@@ -21,7 +21,9 @@ function mapStateToProps({ example: { message } }, props) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    actions: bindActionCreators(actions, dispatch)
+    actions: {
+      test: dispatch.example.test()
+    }
   }
 }
 

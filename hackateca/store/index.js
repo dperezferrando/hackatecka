@@ -1,12 +1,23 @@
-import { createStore,  compose, applyMiddleware } from "redux";
 import { createEpicMiddleware } from 'redux-observable';
-import rootReducer from "../reducers";
+import { init } from "@rematch/core";
+import example from "../reducers/example";
+import exampleModel from "../models/example";
 import rootEpic from "../epics";
 
 const epicMiddleware = createEpicMiddleware();
 
-
-const store = createStore(rootReducer, applyMiddleware(epicMiddleware));
+const store = init({
+  models: {
+    example: exampleModel
+  },
+  redux: {
+    reducers: {
+      example,
+      //el que hayan agregado
+    },
+    middlewares: [epicMiddleware]
+  },
+});
 
 epicMiddleware.run(rootEpic);
 
