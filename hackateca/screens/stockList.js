@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
 import * as WebBrowser from 'expo-web-browser';
 import { RectButton, FlatList } from 'react-native-gesture-handler';
 import capsulitas from "../data/capsulitas";

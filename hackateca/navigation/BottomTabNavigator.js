@@ -20,7 +20,7 @@ export default function BottomTabNavigator({ navigation, route }) {
         component={UsedCapsules}
         options={{
           title: 'Capsulas Usadas',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-code-working" />,
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="counter" />,
         }}
       />
       <BottomTab.Screen
@@ -28,7 +28,7 @@ export default function BottomTabNavigator({ navigation, route }) {
         component={StockList}
         options={{
           title: 'Stock de Capsulas',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-book" />,
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="coffee" />,
         }}
       />
     </BottomTab.Navigator>
