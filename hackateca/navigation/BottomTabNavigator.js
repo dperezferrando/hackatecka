@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import TabBarIcon from '../components/TabBarIcon';
-import UsedCapsules from '../screens/UsedCapsules';
-import LinksScreen from '../screens/LinksScreen';
+import UsedCapsules from '../screens/usedCapsules';
+import StockList from '../screens/stockList';
 
 const BottomTab = createBottomTabNavigator();
 const INITIAL_ROUTE_NAME = 'Usadas';
@@ -25,7 +25,7 @@ export default function BottomTabNavigator({ navigation, route }) {
       />
       <BottomTab.Screen
         name="Capsulas"
-        component={LinksScreen}
+        component={StockList}
         options={{
           title: 'Stock de Capsulas',
           tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-book" />,
