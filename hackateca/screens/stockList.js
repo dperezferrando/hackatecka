@@ -2,13 +2,13 @@ import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import * as WebBrowser from 'expo-web-browser';
-import { RectButton, ScrollView } from 'react-native-gesture-handler';
+import { RectButton, FlatList } from 'react-native-gesture-handler';
+import capsulitas from "../data/capsulitas";
+import CapsuleStock from "./capsuleStock";
 
-export default function LinksScreen() {
+export default () => {
   return (
-    <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-          <Text style={styles.getStartedText}>hola 2</Text> 
-    </ScrollView>
+    <FlatList data={capsulitas} renderItem={({ item }) => <CapsuleStock item={item} />}/>
   );
 }
 
