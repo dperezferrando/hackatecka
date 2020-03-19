@@ -1,22 +1,6 @@
 import * as React from 'react';
-import { Text, Button, View, StyleSheet } from 'react-native';
-
-
-const styles = StyleSheet.create({
-  counter: {
-    alignItems: "center",
-    marginTop: 10
-  },
-  title: {
-    fontSize: 35
-  },
-  usedNumber: {
-    fontWeight: "bold",
-    fontSize: 156,
-    color: "#2e78b7"
-  }
-
-});
+import { Text, Button, View } from 'react-native';
+import styles from "../styles/counter";
 
 class UsedCounter extends React.PureComponent {
 
