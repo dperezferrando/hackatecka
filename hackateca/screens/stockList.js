@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import * as WebBrowser from 'expo-web-browser';
 import { RectButton, FlatList } from 'react-native-gesture-handler';
 import capsulitas from "../data/capsulitas";
-import CapsuleStock from "../components/capsuleStock";
+import CapsuleStock from "../containers/capsuleStock";
 
 export default () => {
   return (

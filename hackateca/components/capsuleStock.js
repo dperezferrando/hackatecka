@@ -28,6 +28,7 @@ class CapsuleStock extends React.PureComponent {
 
   increment(number) {
     this.setState({ ...this.state, cantidad: this.state.cantidad + number })
+    this.props.test()
   }
 }
 
