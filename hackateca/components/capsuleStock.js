@@ -12,7 +12,7 @@ class CapsuleStock extends React.PureComponent {
     const { item } = this.props;
     return <View style={styles.stock}>
       <View style={styles.container}>
-        <Text style={styles.nombre}>{item.nombre}</Text>
+        <Text style={styles.nombre}>{`${item.nombre} ${this.props.message}`}</Text>
       </View>
       <View style={styles.container}>
         <Text style={styles.cantidad}>{this.state.cantidad}</Text>
