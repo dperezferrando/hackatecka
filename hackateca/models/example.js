@@ -3,7 +3,7 @@ import Promise from "bluebird";
 export const example = {
   state: { message: "" },
   reducers: {
-    set: (state, payload) => console.log("GG", state, payload)||({ ...state, message: payload })
+    set: (state, payload) => ({ ...state, message: payload })
   },
   effects: dispatch => ({
        test(payload, rootState) {

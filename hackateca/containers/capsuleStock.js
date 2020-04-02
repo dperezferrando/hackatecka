@@ -1,8 +1,6 @@
 import React from "react";
-import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import CapsuleStock from "../components/capsuleStock";
-import { actions } from "../actions/example";
 
 class CapsuleStockContainer extends React.PureComponent {
   render() {
@@ -16,7 +14,6 @@ class CapsuleStockContainer extends React.PureComponent {
 
 
 function mapStateToProps({ example: { message } }, props) {
-  console.log("AA", message)
   return { message };
 }
 
