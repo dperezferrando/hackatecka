@@ -1,14 +1,15 @@
 import Promise from "bluebird";
 
-export default {
-  state: "",
+export const example = {
+  state: { message: "" },
   reducers: {
-    set: (state, payload) => payload.message
+    set: (state, payload) => console.log("GG", state, payload)||({ ...state, message: payload })
   },
-  effects: {
-    test: (payload, rootState) => {
-      Promise.resolve("ASYNC MESSAGE").delay(2000)
-      .then(message => this.set(message))
-    }
-  }
+  effects: dispatch => ({
+       test(payload, rootState) {
+         Promise.resolve("TEST!")
+         .delay(2000)
+         .tap(message => dispatch.example.set(message))
+      }
+  })
 }

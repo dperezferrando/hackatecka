@@ -1,7 +1,7 @@
 import { createEpicMiddleware } from 'redux-observable';
 import { init } from "@rematch/core";
 import example from "../reducers/example";
-import exampleModel from "../models/example";
+import { example as exampleModel } from "../models/example";
 import rootEpic from "../epics";
 
 const epicMiddleware = createEpicMiddleware();

@@ -16,13 +16,14 @@ class CapsuleStockContainer extends React.PureComponent {
 
 
 function mapStateToProps({ example: { message } }, props) {
+  console.log("AA", message)
   return { message };
 }
 
 function mapDispatchToProps(dispatch) {
   return {
     actions: {
-      test: dispatch.example.test()
+      test: dispatch.example.test
     }
   }
 }
