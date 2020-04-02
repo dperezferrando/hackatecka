@@ -4,22 +4,12 @@ import styles from "../styles/counter";
 
 class UsedCounter extends React.PureComponent {
 
-  constructor() {
-    super()
-    this.state = { used: 0 }
-  }
-
   render() {
-    return <View style={styles.counter}>
-      <Text style={styles.title}>Capsulas usadas</Text>
-      <Text style={styles.usedNumber}>{ this.state.used }</Text>
-      <Button onPress={() => this.increment()}title="USAR"/>
+    return <View>
+      <Text>Capsulas usadas</Text>
     </View>
   }
 
-  increment() {
-    this.setState({ ...this.state, used: this.state.used + 1 })
-  }
 }
 
 
