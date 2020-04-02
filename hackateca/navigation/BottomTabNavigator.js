@@ -2,7 +2,7 @@ import * as React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import TabBarIcon from '../components/TabBarIcon';
 import UsedCapsules from '../screens/usedCapsules';
-import StockList from '../screens/stockList';
+import StockList from '../containers/stockList';
 
 const BottomTab = createBottomTabNavigator();
 const INITIAL_ROUTE_NAME = 'Usadas';
