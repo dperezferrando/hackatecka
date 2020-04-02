@@ -2,7 +2,7 @@ import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import * as WebBrowser from 'expo-web-browser';
-import UsedCounter from "./usedCounter";
+import UsedCounter from "../components/usedCounter";
 
 import { MonoText } from '../components/StyledText';
 
