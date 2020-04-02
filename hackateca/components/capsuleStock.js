@@ -6,13 +6,12 @@ class CapsuleStock extends React.PureComponent {
 
   constructor(props) {
     super(props)
-    //this.state = { cantidad: this.props.item.cantidad}
   }
   render() {
     const { item } = this.props;
     return <View style={styles.stock}>
       <View style={styles.container}>
-        <Text style={styles.nombre}>{`${item.nombre} ${this.props.message}`}</Text>
+        <Text style={styles.nombre}>{item.nombre}</Text>
       </View>
       <View style={styles.container}>
         <Text style={styles.cantidad}>{item.cantidad}</Text>
@@ -27,7 +26,6 @@ class CapsuleStock extends React.PureComponent {
   }
 
   increment(number) {
-    //this.setState({ ...this.state, cantidad: this.state.cantidad + number })
     this.props.increment({ item: this.props.item, qty: number })
   }
 }

@@ -10,15 +10,14 @@ class StockListContainer extends React.PureComponent {
 }
 
 
-function mapStateToProps({ count }, props) {
-  console.log("GG", count)
-  return { capsulitas: count };
+function mapStateToProps({ capsulitas }, props) {
+  return { capsulitas: capsulitas };
 }
 
 function mapDispatchToProps(dispatch) {
   return {
     actions: {
-      increment: dispatch.count.increment
+      increment: dispatch.capsulitas.increment
     }
   }
 }

@@ -1,11 +1,11 @@
 import Promise from "bluebird";
 import _ from "lodash";
-import capsulitas from "../data/capsulitas";
+import initialState from "../data/capsulitas";
 import Api from "../services/api";
 const api = new Api();
 
-export const count = {
-  state: _.orderBy(capsulitas, "nombre"),
+export const capsulitas = {
+  state: _.orderBy(initialState, "nombre"),
   reducers: {
     set: (state, payload) => _(state)
       .reject({ nombre: payload.nombre })
@@ -16,7 +16,7 @@ export const count = {
   effects: dispatch => ({
        increment({ item, qty }, rootState) {
          api.incrementStock(item, qty)
-         .tap(stock => dispatch.count.set(stock))
+         .tap(stock => dispatch.capsulitas.set(stock))
       }
   })
 }
