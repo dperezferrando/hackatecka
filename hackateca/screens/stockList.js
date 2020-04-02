@@ -7,7 +7,12 @@ import CapsuleStock from "./capsuleStock";
 
 export default () => {
   return (
-    <FlatList data={capsulitas} style={styles.lista} renderItem={({ item }) => <CapsuleStock item={item} />}/>
+    <FlatList
+      data={capsulitas}
+      style={styles.lista}
+      renderItem={({ item }) => <CapsuleStock item={item} />}
+      keyExtractor={(item, i) => i.toString()}
+    />
   );
 }
 

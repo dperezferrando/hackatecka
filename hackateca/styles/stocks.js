@@ -27,9 +27,7 @@ export default StyleSheet.create({
     backgroundColor: "#2e78b7",
     width: 20,
     alignItems: "center",
-    color: "white",
     borderRadius: 3,
-    textAlignVertical: "center"
   }
 
 });
