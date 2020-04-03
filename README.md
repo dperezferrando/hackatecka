@@ -28,3 +28,5 @@ const store = init({ models: { bar } })
 En lugar de lanzar de definir y lanzar una action solo debemos llamar a `dispatch.bar.foo`.
 
 Y del resto se encarga Rematch de hacerlo por nosotros.
+
+![](https://imgur.com/7QqfFrB.gif)
