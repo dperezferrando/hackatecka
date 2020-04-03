@@ -63,4 +63,4 @@ En en el proyecto clonado tienen el template de una aplicación con dos pantalla
 - La primera pantalla debe ser un simple contador de cápsulas usadas (un botón y un número que va subiendo básicamente)
 - La segunda debe ser un listado de capsulas con su correspondiente stock y dos botones por cada uno que permitan aumentar y disminuir el stock para esa cápsula de cafe. En la carpeta “data” ya tienen un array de cápsulas para usar.
 
-![](https://www.pngitem.com/pimgs/m/109-1094659_to-be-continued-png-continued-back-to-the.png)
+![](https://imgur.com/OnuyVqz.jpg)
