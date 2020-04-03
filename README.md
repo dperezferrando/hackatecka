@@ -36,3 +36,5 @@ Agregando a la ecuación las epics, el ciclo de vida cambia ligeramente:
 
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--46A7j5m5--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://cl.ly/3I44361h3q0U/Image%25202018-06-10%2520at%25208.44.12%2520AM.png)
 
+![](https://imgur.com/1YfTTce.jpg)
+
