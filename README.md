@@ -3,7 +3,7 @@
 ## Requisitos
 - Clonar este repo 
 - Node 12.13.0
-- `npm install -g explo-cli`
+- `npm install -g expo-cli`
 - Entrar en la carpeta hackateca y hacer `npm i`
 - Instalar app expo en el celular
 
